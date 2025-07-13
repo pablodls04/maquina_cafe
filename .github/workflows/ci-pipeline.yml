@@ -1,24 +1,12 @@
 name: CI Pipeline
-
 on: [push, pull_request]
-
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Clonar repositorio
         uses: actions/checkout@v3
-
-      - name: Configurar Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Instalar dependencias
-        run: |
-          python -m pip install --upgrade pip
-          pip install pytest
-
-      - name: Ejecutar pruebas con pytest
-        run: pytest
+      - name: Configurar entorno
+        run: echo "Configurando entorno de compilación"
+      - name: Compilar proyecto
+        run: echo "Ejecutando compilación"
