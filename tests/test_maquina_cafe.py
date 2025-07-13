@@ -1,5 +1,3 @@
-
-
 import sys
 import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
@@ -19,7 +17,7 @@ def test_seleccionar_vaso_invalido():
 def test_seleccionar_azucar():
     maquina = MaquinaCafe()
     mensaje = maquina.seleccionar_azucar(2)
-    assert mensaje == "2 cucharadas de azúcar seleccionadas"
+    assert mensaje == "Seleccionaste 2 cucharadas de azúcar"
 
 def test_vaso_no_disponible():
     maquina = MaquinaCafe()
