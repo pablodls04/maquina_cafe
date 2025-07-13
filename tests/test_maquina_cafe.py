@@ -19,7 +19,7 @@ def test_seleccionar_vaso_invalido():
 def test_seleccionar_azucar():
     maquina = MaquinaCafe()
     mensaje = maquina.seleccionar_azucar(2)
-    assert mensaje == "2 cucharadas de azucar seleccionadas"
+    assert mensaje == "2 cucharadas de azúcar seleccionadas"
 
 def test_vaso_no_disponible():
     maquina = MaquinaCafe()
@@ -40,7 +40,7 @@ def test_azucar_no_disponible():
     maquina.seleccionar_vaso("grande")
     maquina.seleccionar_azucar(2)
     mensaje = maquina.preparar_cafe()
-    assert mensaje == "No hay suficiente azucar"
+    assert mensaje == "No hay suficiente azúcar"
 
 def test_preparar_cafe_completo():
     maquina = MaquinaCafe()
