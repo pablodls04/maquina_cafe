@@ -57,7 +57,7 @@ class MaquinaCafe:
 
     def seleccionar_azucar(self, cucharadas):
         self.azucar_seleccionada = cucharadas
-        return f"{cucharadas} cucharadas de azúcar seleccionadas"
+        return f"Seleccionaste {cucharadas} cucharadas de azúcar"
 
     def preparar_cafe(self):
         if not self.vaso_seleccionado:
